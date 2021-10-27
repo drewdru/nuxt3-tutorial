@@ -3,6 +3,9 @@
     <NuxtLink to="/">
       Home
     </NuxtLink>
+    <NuxtLink to="/game">
+      Game
+    </NuxtLink>
     <NuxtLink to="/about">
       About
     </NuxtLink>
