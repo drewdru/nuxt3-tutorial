@@ -35,7 +35,7 @@ export default {
 <script setup>
 useMeta({
   bodyAttrs: {
-    class: 'test'
+    class: 'body'
   }
 })
 // composables

@@ -20,3 +20,9 @@
     </NuxtLink>
   </div>
 </template>
+
+<style lang="less">
+.nav-bar {
+  background-color: red;
+}
+</style>

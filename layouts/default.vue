@@ -6,6 +6,9 @@
 </template>
 
 
+<style lang="less">
+</style>
+
 <script setup>
 // import Nav from '@/components/Nav.vue'
 </script>
