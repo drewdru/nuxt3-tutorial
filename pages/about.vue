@@ -20,4 +20,7 @@ export default {
 
 <script setup>
 const { data, refresh, pending } = await useAsyncData('/api/hello', () => $fetch('/api/helloworld'))
+// TODO: check why doesn't work this:
+// const { data, refresh, pending } = await useFetch('/api/hello')
+// const { data: mountain } = await useFetch('/api/mountains/everest', { pick: ['title', 'description'] })
 </script>
