@@ -6,6 +6,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@intlify/nuxt3": "^0.1.8",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "nuxt3": "^3.0.0-27258467.4e424d0"

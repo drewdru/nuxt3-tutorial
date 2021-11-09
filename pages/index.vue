@@ -12,10 +12,15 @@
     <p>{{ d }}</p>
     <p>{{ foo }}</p>
     <div>
-      Locale: {{ locale }}
-      <button @click="updateLocale">
+      TestPluginState: {{ testPluginState }}
+      <button @click="updateTestPluginState">
         Set to Klington
       </button>
+    </div>
+    <div>
+      {{locale}}: {{t("hello")}}
+      <button @click="locale='ru'">ru</button>
+      <button @click="locale='en'">en</button>
     </div>
     <div>
       Server response: {{ data }}
@@ -24,7 +29,7 @@
 </template>
 
 
-<script>
+<script lang="ts">
 export default {
   head: {
     title: 'Static title'
@@ -32,7 +37,8 @@ export default {
 }
 </script>
 
-<script setup>
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
 useMeta({
   bodyAttrs: {
     class: 'body'
@@ -44,14 +50,15 @@ const b = useB()
 const c = useC()
 const d = useD()
 const foo = useFoo()
-const locale = useState('locale')
+const testPluginState = useState('testPluginState')
+const { t, locale } = useI18n()
 
 // data
 const dynamic = ref(42)
 const { data } = await useFetch('/api/hello', { params: { foo: 'bar' } })
 
 // methods
-const updateLocale = () => { locale.value = 'tlh-klingon' }
+const updateTestPluginState = () => { testPluginState.value = 'tlh-klingon' }
 
 
 </script>

@@ -2,5 +2,5 @@
   <Game/>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 </script>

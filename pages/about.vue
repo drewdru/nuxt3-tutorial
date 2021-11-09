@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   head: {
     title: 'Static title'
@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<script setup>
+<script lang="ts" setup>
 const { data, refresh, pending } = await useAsyncData('/api/hello', () => $fetch('/api/helloworld'))
 // TODO: check why doesn't work this:
 // const { data, refresh, pending } = await useFetch('/api/hello')

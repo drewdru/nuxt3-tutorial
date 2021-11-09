@@ -11,7 +11,7 @@
 </template>
 
 
-<script setup>
+<script lang="js" setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 let gameContainer = ref(null)
 // TODO: Destroy component on unmounted to fix bug or try to use client-only:
