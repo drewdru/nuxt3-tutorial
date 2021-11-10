@@ -321,12 +321,7 @@
     unplugin "^0.2.19"
     vue-i18n beta
 
-"@intlify/shared@9.2.0-beta.17":
-  version "9.2.0-beta.17"
-  resolved "https://registry.npmjs.org/@intlify/shared/-/shared-9.2.0-beta.17.tgz"
-  integrity sha512-40lZgkvwHH9l0o94Aw6NDxJUn7pvbwFDSskYYcSCh93kzLEAQFL2HnPmdYFcM6aAQbHiGgaqadbGXfYiG98glg==
-
-"@intlify/shared@beta":
+"@intlify/shared@9.2.0-beta.17", "@intlify/shared@beta":
   version "9.2.0-beta.17"
   resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.2.0-beta.17.tgz#d4c7c89c96e0ea02fa33e5c416c77e7e641b3259"
   integrity sha512-40lZgkvwHH9l0o94Aw6NDxJUn7pvbwFDSskYYcSCh93kzLEAQFL2HnPmdYFcM6aAQbHiGgaqadbGXfYiG98glg==

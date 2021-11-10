@@ -1,26 +1,24 @@
 <template>
   <div>
     <!-- TODO: nuxt3-3.0.0-27252999.d2cc9e4 [Vue warn]: Failed to resolve component: client-only -->
-    <!-- <client-only>  -->
-      <div :id="gameContainerId" ref="gameContainer"/>
-      <div class="placeholder" v-if="isGameLoading">
-        Loading ...
-      </div>
-    <!-- </client-only> -->
+    <div :id="gameContainerId" ref="gameContainer"/>
+    <div class="placeholder" v-if="isGameLoading">
+      Loading ...
+    </div>
   </div>
 </template>
 
 
-<script lang="js" setup>
+<script lang="ts" setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 let gameContainer = ref(null)
 // TODO: Destroy component on unmounted to fix bug or try to use client-only:
 // phaser create canvas outside game сontainer
 let gameContainerId = 'gameContainerId'
 
-let isGameLoading = false
-let gameInstance = null
-let game
+let isGameLoading = true
+let gameInstance: any = null
+let game: any
 
 onMounted(async () => {
   if (game === undefined) {
